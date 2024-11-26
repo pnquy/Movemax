@@ -1,0 +1,85 @@
+/* Reset mặc định */
+body, html, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+*{
+  font-family: "Kanit", sans-serif;
+  font-style: normal;
+}
+/* Header container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #191818;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: #FFFFFF;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+header a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Phần bên trái */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+/* Menu navigation */
+.nav-menu a {
+    margin-right: 15px;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #0073aa;
+}
+
+/* Phần bên phải */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Icon links */
+.icon {
+    margin-left: 15px;
+}
+
+.icon img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.icon img:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 768px) {
+    .nav-menu a {
+        font-size: 14px;
+    }
+
+    .icon img {
+        width: 20px;
+        height: 20px;
+    }
+}
