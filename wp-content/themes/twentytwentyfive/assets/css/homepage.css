@@ -11,7 +11,7 @@
   width: 100%;
   object-fit: contain;
 }
-.section-2 .title{
+.section-2 .title, .section-3 .title, .section-4 .title{
   background-color: black;
   font-size: 56px;
   color: transparent;
@@ -42,4 +42,77 @@
   color: white;
   font-size: 40px;
   text-decoration: none;
+}
+.section-3 .brand{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.section-3 .product img{
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.section-3 .brand .product .link-product{
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: black;
+}
+.section-3 .brand .product .link-product p, .section-3 .brand .product .link-product h2{
+  margin: 0px;
+}
+.section-3 .brand .product .link-product .price{
+  display: flex;
+  flex-direction: column;
+}
+.section-4 ul{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  gap: 24px;
+}
+.section-4 ul li{
+  width: calc(100%/3);
+}
+.section-4 ul li img{
+  width: 100%;
+  height: 481px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.section-4 .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-4 .slider-arrows {
+    display: flex;
+    gap: 10px;
+}
+
+.section-4 .slider-arrows .slick-prev,
+.section-4 .slider-arrows .slick-next {
+    background: #000; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.section-4 .slider-arrows .slick-prev:hover,
+.section-4 .slider-arrows .slick-next:hover {
+    background: #555; /* Màu nền khi hover */
+}
+.slick-dots{
+  width: inherit;
+}
+.section-4 .category{
+  font-size: 30px;
+  color: black;
 }
